@@ -1,0 +1,205 @@
+feeds:
+- name: OpenAI News / Release
+  url: https://openai.com/news/rss.xml
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: Google AI
+  url: https://blog.google/technology/ai/rss/
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: Google DeepMind
+  url: https://deepmind.google/blog/rss.xml
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: Hugging Face Blog
+  url: https://huggingface.co/blog/feed.xml
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: PyTorch Blog
+  url: https://pytorch.org/feed.xml
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: NVIDIA Technical Blog
+  url: https://developer.nvidia.com/blog/feed/
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: AWS Machine Learning Blog
+  url: https://aws.amazon.com/blogs/machine-learning/feed/
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: Microsoft Research Blog
+  url: https://www.microsoft.com/en-us/research/feed/
+  category: AI 官方 / 模型动态
+  enabled: true
+- name: arXiv cs.CL - NLP / LLM
+  url: https://export.arxiv.org/rss/cs.CL
+  category: 论文 / 研究
+  enabled: true
+- name: arXiv cs.LG - Machine Learning
+  url: https://export.arxiv.org/rss/cs.LG
+  category: 论文 / 研究
+  enabled: true
+- name: arXiv cs.AI - Artificial Intelligence
+  url: https://export.arxiv.org/rss/cs.AI
+  category: 论文 / 研究
+  enabled: true
+- name: arXiv cs.CV - Computer Vision
+  url: https://export.arxiv.org/rss/cs.CV
+  category: 论文 / 研究
+  enabled: true
+- name: arXiv cs.DC - Distributed / Systems
+  url: https://export.arxiv.org/rss/cs.DC
+  category: 论文 / 研究
+  enabled: true
+- name: Lilian Weng
+  url: https://lilianweng.github.io/index.xml
+  category: 论文 / 研究
+  enabled: true
+- name: Simon Willison - AI / LLM Engineering
+  url: https://simonwillison.net/atom/everything/
+  category: 论文 / 研究
+  enabled: true
+- name: BlenderNation - 教程与社区
+  url: https://www.blendernation.com/feed/
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Artists - 最新帖子
+  url: https://blenderartists.org/latest.rss
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Artists - 每周热门
+  url: https://blenderartists.org/top.rss?period=weekly
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Stack Exchange - 最新问题
+  url: https://blender.stackexchange.com/feeds
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Stack Exchange - Modeling
+  url: https://blender.stackexchange.com/feeds/tag?tagnames=modeling&sort=newest
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Stack Exchange - Geometry Nodes
+  url: https://blender.stackexchange.com/feeds/tag?tagnames=geometry-nodes&sort=newest
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Stack Exchange - Python
+  url: https://blender.stackexchange.com/feeds/tag?tagnames=python&sort=newest
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Stack Exchange - Materials
+  url: https://blender.stackexchange.com/feeds/tag?tagnames=materials&sort=newest
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Stack Exchange - Animation
+  url: https://blender.stackexchange.com/feeds/tag?tagnames=animation&sort=newest
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender 官方新闻
+  url: https://www.blender.org/feed/
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Blender Developer Blog
+  url: https://code.blender.org/feed/
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Bloop Animation 教程
+  url: https://www.bloopanimation.com/feed/
+  category: Blender 学习 / 建模 / 社区
+  enabled: true
+- name: Real Python
+  url: https://realpython.com/atom.xml
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: freeCodeCamp
+  url: https://www.freecodecamp.org/news/rss/
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Python 官方博客
+  url: https://blog.python.org/feeds/posts/default?alt=rss
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: GitHub Blog
+  url: https://github.blog/feed/
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Docker Blog
+  url: https://www.docker.com/blog/feed/
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Cloudflare Blog
+  url: https://blog.cloudflare.com/rss/
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Stack Overflow - Python 新问题
+  url: https://stackoverflow.com/feeds/tag?tagnames=python&sort=newest
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Stack Overflow - PyTorch 新问题
+  url: https://stackoverflow.com/feeds/tag?tagnames=pytorch&sort=newest
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Stack Overflow - Docker 新问题
+  url: https://stackoverflow.com/feeds/tag?tagnames=docker&sort=newest
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Hacker News
+  url: https://hnrss.org/frontpage
+  category: 编程教程 / 开发实践
+  enabled: true
+- name: Reddit - LocalLLaMA
+  url: https://www.reddit.com/r/LocalLLaMA/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Reddit - MachineLearning
+  url: https://www.reddit.com/r/MachineLearning/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Reddit - StableDiffusion
+  url: https://www.reddit.com/r/StableDiffusion/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Reddit - comfyui
+  url: https://www.reddit.com/r/comfyui/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Reddit - blender
+  url: https://www.reddit.com/r/blender/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Reddit - artificial
+  url: https://www.reddit.com/r/artificial/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Reddit - generativeAI
+  url: https://www.reddit.com/r/generativeAI/.rss
+  category: 开源 / AI 社区
+  enabled: true
+- name: Anime News Network
+  url: https://www.animenewsnetwork.com/all/rss.xml?ann-edition=us
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
+- name: MyAnimeList News
+  url: https://myanimelist.net/rss/news.xml
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
+- name: Anime Corner
+  url: https://animecorner.me/feed/
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
+- name: Gematsu
+  url: https://www.gematsu.com/feed
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
+- name: Siliconera
+  url: https://www.siliconera.com/feed/
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
+- name: Noisy Pixel
+  url: https://noisypixel.net/feed/
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
+- name: VNDB - Visual Novel Database
+  url: https://vndb.org/atom
+  category: 二次元 / 番剧 / Gal / 游戏
+  enabled: true
