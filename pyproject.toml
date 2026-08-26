@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rss-driven-ai-radar"
+version = "0.1.0"
+description = "A lightweight RSS-driven information radar for AI agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "smallSheep123"}]
+dependencies = [
+  "httpx>=0.28,<1",
+  "PyYAML>=6.0,<7",
+  "beautifulsoup4>=4.13,<5",
+]
+
+[project.scripts]
+rss-radar = "radar.cli:main"
+
+[tool.setuptools]
+packages = ["radar"]
