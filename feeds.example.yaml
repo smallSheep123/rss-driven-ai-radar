@@ -1,0 +1,15 @@
+feeds:
+  - name: OpenAI News
+    url: https://openai.com/news/rss.xml
+    category: AI / 模型动态
+    enabled: true
+
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    category: AI / 开源
+    enabled: true
+
+  - name: Blender Developers Blog
+    url: https://code.blender.org/feed/
+    category: Blender
+    enabled: true
