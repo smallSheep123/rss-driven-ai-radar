@@ -1,0 +1,10 @@
+[Unit]
+Description=RSS-driven AI Radar
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/rss-driven-ai-radar
+EnvironmentFile=-/opt/rss-driven-ai-radar/.env
+ExecStart=/opt/rss-driven-ai-radar/.venv/bin/python run.py run
