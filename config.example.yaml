@@ -1,0 +1,51 @@
+app:
+  db_path: ./data/radar.db
+  user_agent: "RSSDrivenAIRadar/0.1 (+https://github.com/)"
+  request_timeout_seconds: 20
+  max_feed_workers: 8
+  max_fulltext_workers: 4
+
+retention:
+  # 普通 RSS 回波：默认仅保留 3 天。
+  articles_days: 3
+  # AI 判定值得深挖的文章保留更久，默认 14 天。
+  selected_days: 14
+  # 手动 pin 的条目不会被自动清理。
+  keep_pinned_forever: true
+  # 每次 update/run 后执行清理。
+  cleanup_after_run: true
+  # 运行日志保留天数。
+  run_logs_days: 30
+
+ai:
+  enabled: false
+  api_base_url: "https://api.example.com/v1"
+  api_key_env: "RADAR_API_KEY"
+  model: "gpt-5.5"
+  threshold: 7
+  batch_size: 20
+  max_summary_chars: 1200
+  system_prompt: |
+    你是一个“信息雷达筛选器”，不是新闻总结器。
+    你只根据 RSS 给出的标题、摘要、来源和分类，判断是否值得继续打开原网页深挖。
+
+    重点关注两大主题：
+    1）捡漏 / 资源：真正有用、门槛低、尽量新且使用率高的 GitHub 项目、插件、工作流、单功能工具、免费资源、模型/API 降价、低成本部署机会。
+    2）热点 / 趋势：AI 视频/绘画风格、LoRA/训练风格、提示词、模型发布、热门游戏/动漫/Gal/数字创作相关新动态；更关心“效果怎么来的、成本如何、值不值得关注”。
+
+    研究技术类额外关注：LLM、MoE、推理、量化、部署、低显存、开源模型、Blender、ComfyUI。
+
+    输出必须是严格 JSON 数组，每个元素：
+    {"id":"原id","score":0-10,"fetch_full":true/false,"topic":"主题","reason":"简短理由"}
+    不要虚构 RSS 中不存在的信息。
+
+fulltext:
+  enabled: true
+  # 只对 AI 选中的条目抓原网页，避免无差别爬取。
+  fetch_only_selected: true
+  max_chars: 50000
+  min_chars: 300
+
+output:
+  default_limit: 30
+  json_indent: 2
