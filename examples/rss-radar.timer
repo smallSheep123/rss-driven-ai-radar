@@ -1,0 +1,11 @@
+[Unit]
+Description=Run RSS-driven AI Radar every 30 minutes
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=30min
+Persistent=true
+RandomizedDelaySec=90
+
+[Install]
+WantedBy=timers.target
